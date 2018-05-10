@@ -1,7 +1,7 @@
 #include <Arduino.h>
 
 int sensorPin = A7;
-int PWM = 7;
+int PWM = 7; // Fan
 int sensorVal;
 int PWMVal;
 bool fanRunning = false;
