@@ -35,10 +35,12 @@ void loop() {
   delay(1000);
 
   // Fan an
-  if (sensorVal > 587) {
+  //if (sensorVal > 587) {
+  if (temp > 28.5) {
     digitalWrite(PWM, HIGH);
   }
-  if (sensorVal < 500) {
+  //if (sensorVal < 500) {
+  if (temp < 27.5) {
     digitalWrite(PWM, LOW);
   }
 }
